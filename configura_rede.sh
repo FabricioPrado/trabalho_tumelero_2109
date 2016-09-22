@@ -6,6 +6,10 @@ echo -e 'source /etc/network/interfaces.d/*\n\nauto lo\niface lo inet loopback' 
 echo 'Configurador de rede por DHCP 1.0'
 echo 'Script por Eduardo Medeiros & Fabricio Prado'
 echo ''
+echo 'Definindo nome do computador...'
+echo 'FABRICIO_PRADO' > /etc/hostname
+hostname FABRICIO_PRADO
+echo ''
 echo 'Listando as placas de rede ativas...'
 ip link | grep BROADCAST | awk '{print $2}' | tr -d ':'
 echo ''
