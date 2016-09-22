@@ -19,4 +19,10 @@ echo 'Exibindo status do Serviço SSH...'
 echo ''
 systemctl status ssh
 echo ''
-
+echo 'Pronto para receber conexões. Iniciando conexão com o computador parceiro...'
+echo ''
+echo -n 'Digite o IP do computador parceiro: '
+read ipremoto
+echo ''
+echo "Iniciando conexão com o Computador $ipremoto com o usuario aluno..."
+ssh aluno@$ipremoto -p 10000
