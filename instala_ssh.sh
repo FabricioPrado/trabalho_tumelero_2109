@@ -8,6 +8,9 @@ echo ''
 echo 'Instalando Servidor SSH...'
 apt update && apt install openssh-server -y
 echo ''
+echo 'Criando backup do arquivo sshd_config...'
+cp -f /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+echo ''
 echo 'Alterando porta de escuta do SSH para 10000...'
 sed -i 's/Port .*/Port 10000/' /etc/ssh/sshd_config
 echo ''

@@ -1,0 +1,5 @@
+crie uma nova pasta, abra-a e execute o comando 
+git init
+para criar um novo repositório.
+Laks]
+laks
